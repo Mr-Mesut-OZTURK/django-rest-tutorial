@@ -1,4 +1,4 @@
-"""tutoriol URL Configuration
+"""tutorial URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -26,6 +26,12 @@ router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # default app for quickstart app
     path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+
+    # snippets app
+    path('snippets/', include('snippets.urls')),
+
 ]

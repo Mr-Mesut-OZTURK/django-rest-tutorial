@@ -1,5 +1,5 @@
 """
-WSGI config for tutoriol project.
+WSGI config for tutorial project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
